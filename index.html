@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar UI Challenge</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <div class="filters">
+      <h3>Filters</h3>
+      <div class="filterSection">
+        <h4>Property Type</h4>
+        <label>
+          <input type="checkbox" id="filterApartment"> Apartment
+        </label>
+        <label>
+          <input type="checkbox" id="filterHouse"> House
+        </label>
+      </div>
+      <div class="filterSection">
+        <h4>Price Range</h4>
+        <input type="range" id="priceRange" min="1000" max="100000" step="1000" value="100000">
+        <span id="priceDisplay">Max Price: $100000</span>
+      </div>
+    </div>
+  </div>
+  <div class="property-list" id="propertyList"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
